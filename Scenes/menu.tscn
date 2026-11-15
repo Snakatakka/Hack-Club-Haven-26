@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://1du5x1k02x4a"]
 
-[ext_resource type="Script" uid="uid://bml426ccyw2db" path="res://Nodes/menu.gd" id="1_0owfn"]
+[ext_resource type="Script" uid="uid://bml426ccyw2db" path="res://Scenes/Menu/menu.gd" id="1_0owfn"]
 [ext_resource type="Texture2D" uid="uid://be7256e1tcurq" path="res://background.png" id="1_y1ial"]
 [ext_resource type="FontFile" uid="uid://c2f11ovj6cjdq" path="res://Nodes/VampiroOne-Regular.ttf" id="2_7ku0t"]
 
