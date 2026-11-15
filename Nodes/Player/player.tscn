@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://p33hli02gx2u"]
 
 [ext_resource type="Script" uid="uid://dit5ldkuqfs87" path="res://Nodes/Player/player.gd" id="1_us8wf"]
-[ext_resource type="Texture2D" uid="uid://gvehqrlnfu2x" path="res://icon.svg" id="2_lkjqq"]
+[ext_resource type="Texture2D" uid="uid://bt00gr0pw7h8q" path="res://bat.png" id="2_us8wf"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_q1ymb"]
-radius = 85.2115
+radius = 39.5
 
 [sub_resource type="Shader" id="Shader_wocd4"]
 code = "shader_type canvas_item;
@@ -95,4 +95,4 @@ shape = SubResource("CircleShape2D_q1ymb")
 
 [node name="PlayerSprite" type="Sprite2D" parent="." unique_id=851598602]
 material = SubResource("ShaderMaterial_sldgk")
-texture = ExtResource("2_lkjqq")
+texture = ExtResource("2_us8wf")
