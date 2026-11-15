@@ -14,4 +14,4 @@ func _process(delta: float) -> void:
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Player"):
 		print("SOMETHING HAPPENED")
-		get_tree().change_scene_to_file("res://Scenes/Levels/level_" + str(Data.current_level))
+		get_tree().change_scene_to_file("res://Scenes/Levels/level_" + str(Data.current_level) + ".tscn")
