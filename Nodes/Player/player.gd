@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 const SPEED : float = 10.0
+@onready var player_sprite : Sprite2D = $PlayerSprite
 var echo_point = load("res://Nodes/EchoPoint/echo_point.tscn").instantiate()
 var can_scream : bool = true
 
@@ -13,8 +14,7 @@ func _physics_process(delta: float) -> void:
 	
 	if Input.is_action_just_pressed("scream") && can_scream:
 		var instance = echo_point.duplicate()
-		instance.position = position
-		get_parent().add_child(instance)
+		player_sprite.add_child(instance)
 		can_scream = false
 		await get_tree().create_timer(1.5).timeout
 		can_scream = true

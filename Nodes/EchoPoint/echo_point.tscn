@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dh5up1b6xm22v"]
 
 [ext_resource type="Script" uid="uid://b34nkhc5d3xu" path="res://Nodes/EchoPoint/echo_point.gd" id="1_j4jvs"]
+[ext_resource type="Script" uid="uid://c0at150xapqyd" path="res://Nodes/EchoPoint/area_2d.gd" id="2_xuf0s"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4kxuq"]
 
@@ -8,7 +9,10 @@
 script = ExtResource("1_j4jvs")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=784683185]
+script = ExtResource("2_xuf0s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=596196577]
 shape = SubResource("CircleShape2D_4kxuq")
 debug_color = Color(0.9837832, 0, 0.35417515, 0.41960785)
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

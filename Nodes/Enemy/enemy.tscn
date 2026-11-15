@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://8tm6v3i1l8ig"]
+
+[ext_resource type="Script" uid="uid://ui7prltoix2c" path="res://Nodes/Enemy/enemy.gd" id="1_ee5ic"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0gtaq"]
+load_path = "res://.godot/imported/knight.png-e78b6e5166df60917cb4b885a289c963.ctex"
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4kxuq"]
+radius = 30.0
+height = 86.0
+
+[node name="Enemy" type="CharacterBody2D" unique_id=947115136 groups=["Enemy"]]
+script = ExtResource("1_ee5ic")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=141488945]
+self_modulate = Color(1, 1, 1, 0)
+texture = SubResource("CompressedTexture2D_0gtaq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=901049041]
+shape = SubResource("CapsuleShape2D_4kxuq")
