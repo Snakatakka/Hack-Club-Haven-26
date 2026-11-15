@@ -30,6 +30,7 @@ object=""
 Enemy=""
 Door=""
 Player=""
+Brick=""
 
 [input]
 

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bnkictqq2fmmq"]
+
+[ext_resource type="Script" uid="uid://878xok4n28rc" path="res://Nodes/Brick/brick.gd" id="1_5uupt"]
+
+[node name="Brick" type="StaticBody2D" unique_id=2107095673 groups=["Brick"]]
+script = ExtResource("1_5uupt")

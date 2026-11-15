@@ -85,7 +85,7 @@ shader_parameter/thickness = 0.0
 shader_parameter/sample_count = 8
 shader_parameter/inner_outline = true
 
-[node name="Player" type="CharacterBody2D" unique_id=750918722]
+[node name="Player" type="CharacterBody2D" unique_id=750918722 groups=["Player"]]
 script = ExtResource("1_us8wf")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2022533643]
