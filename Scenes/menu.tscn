@@ -11,6 +11,20 @@ expand_margin_top = 10.0
 expand_margin_right = 20.0
 expand_margin_bottom = 10.0
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bda2p"]
+bg_color = Color(0.6683849, 0.22465202, 0.023784388, 1)
+expand_margin_left = 20.0
+expand_margin_top = 10.0
+expand_margin_right = 20.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xtgn2"]
+bg_color = Color(0.98701423, 0.42734987, 0.22209299, 1)
+expand_margin_left = 22.0
+expand_margin_top = 11.0
+expand_margin_right = 22.0
+expand_margin_bottom = 11.0
+
 [node name="Node2D" type="Node2D" unique_id=1116486948]
 script = ExtResource("1_0owfn")
 
@@ -51,6 +65,8 @@ offset_bottom = 373.0
 theme_override_fonts/font = ExtResource("2_7ku0t")
 theme_override_font_sizes/font_size = 100
 theme_override_styles/normal = SubResource("StyleBoxFlat_d7wv1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_bda2p")
+theme_override_styles/hover = SubResource("StyleBoxFlat_xtgn2")
 text = "START"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
