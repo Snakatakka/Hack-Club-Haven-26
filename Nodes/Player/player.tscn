@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bt00gr0pw7h8q" path="res://bat.png" id="2_us8wf"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_q1ymb"]
-radius = 39.5
+radius = 25.0
 
 [sub_resource type="Shader" id="Shader_wocd4"]
 code = "shader_type canvas_item;

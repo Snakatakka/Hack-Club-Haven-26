@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bcthypmfrnhu8"]
+
+[ext_resource type="Script" uid="uid://c1h5351ft2yib" path="res://door.gd" id="1_uu4j4"]
+[ext_resource type="Texture2D" uid="uid://bswe56l3flly2" path="res://Tilesetv3.png" id="2_m44im"]
+[ext_resource type="Script" uid="uid://b3jxqo4vopa4s" path="res://area_2d.gd" id="3_7vs10"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4kxuq"]
+atlas = ExtResource("2_m44im")
+region = Rect2(36, 502, 24, 42)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4kxuq"]
+size = Vector2(23, 42)
+
+[node name="Door" type="Node2D" unique_id=873678455 groups=["Door"]]
+script = ExtResource("1_uu4j4")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=934740384]
+texture = SubResource("AtlasTexture_4kxuq")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=558512733]
+script = ExtResource("3_7vs10")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1673723505]
+shape = SubResource("RectangleShape2D_4kxuq")
+
+[connection signal="area_entered" from="Area2D" to="Area2D" method="_on_area_entered"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

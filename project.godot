@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="HAVEN TIME BAYBEE"
-run/main_scene="uid://1du5x1k02x4a"
+run/main_scene="uid://d2naknc4u7ekn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Data="*uid://csnhbprom0rcc"
 
 [display]
 
@@ -24,6 +28,8 @@ window/stretch/aspect="expand"
 
 object=""
 Enemy=""
+Door=""
+Player=""
 
 [input]
 

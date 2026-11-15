@@ -6,10 +6,7 @@ var echo_point = load("res://Nodes/EchoPoint/echo_point.tscn").instantiate()
 var can_scream : bool = true
 
 func _physics_process(delta: float) -> void:
-	var direction : Vector2 = Input.get_vector("left", "right", "up", "down")
-	
-	position += Vector2(direction.x, direction.y)
-	
+	var direction : Vector2 = Input.get_vector("left", "right", "up", "down")	
 	_calculate_direction(direction)
 	
 	if Input.is_action_just_pressed("scream") && can_scream:

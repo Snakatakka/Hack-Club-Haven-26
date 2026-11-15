@@ -13,7 +13,7 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_body_entered(body: Node2D) -> void:
-	if body.is_in_group("Enemy"):
+	if body.is_in_group("Enemy") or body.is_in_group("Door"):
 		var tween = get_tree().create_tween() 
 		body.sprite.self_modulate = Color.WHITE
 		tween.tween_property(body.sprite, "self_modulate", clear, 1.0)
