@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://8tm6v3i1l8ig"]
 
 [ext_resource type="Script" uid="uid://ui7prltoix2c" path="res://Nodes/Enemy/enemy.gd" id="1_ee5ic"]
+[ext_resource type="Script" uid="uid://ctedeq3ce1ddd" path="res://Nodes/Enemy/area_2d.gd" id="2_ee5ic"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0gtaq"]
 load_path = "res://.godot/imported/knight.png-e78b6e5166df60917cb4b885a289c963.ctex"
@@ -18,3 +19,12 @@ texture = SubResource("CompressedTexture2D_0gtaq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=901049041]
 shape = SubResource("CapsuleShape2D_4kxuq")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=402695113]
+script = ExtResource("2_ee5ic")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1605796572]
+shape = SubResource("CapsuleShape2D_4kxuq")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
