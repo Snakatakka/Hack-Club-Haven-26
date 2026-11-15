@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bpeg01kxd35aw" path="res://Scenes/level.tscn" id="1_7qxk6"]
 [ext_resource type="PackedScene" uid="uid://bcthypmfrnhu8" path="res://Nodes/Door/door.tscn" id="2_ucdhh"]
+[ext_resource type="PackedScene" uid="uid://8tm6v3i1l8ig" path="res://Nodes/Enemy/enemy.tscn" id="3_oylv5"]
 
 [node name="Level" unique_id=1134229188 instance=ExtResource("1_7qxk6")]
 
@@ -10,3 +11,9 @@ tile_map_data = PackedByteArray("AAD0//3/AQAGAA8AAAD1//7/AQAGAA8AAAD1////AQAGAA8
 
 [node name="Door" parent="." index="4" unique_id=1464009133 instance=ExtResource("2_ucdhh")]
 position = Vector2(276, 41)
+
+[node name="Enemy" parent="." index="5" unique_id=947115136 instance=ExtResource("3_oylv5")]
+position = Vector2(-449, -163)
+
+[node name="Enemy2" parent="." index="6" unique_id=1944341242 instance=ExtResource("3_oylv5")]
+position = Vector2(355, 102)
