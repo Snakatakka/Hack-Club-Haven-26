@@ -1,10 +1,39 @@
 [gd_scene format=3 uid="uid://1du5x1k02x4a"]
 
+[ext_resource type="Script" uid="uid://bml426ccyw2db" path="res://Nodes/menu.gd" id="1_0owfn"]
 [ext_resource type="Texture2D" uid="uid://be7256e1tcurq" path="res://background.png" id="1_y1ial"]
+[ext_resource type="FontFile" uid="uid://c2f11ovj6cjdq" path="res://Nodes/VampiroOne-Regular.ttf" id="2_7ku0t"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d7wv1"]
 
 [node name="Node2D" type="Node2D" unique_id=1116486948]
+script = ExtResource("1_0owfn")
 
 [node name="Background" type="Sprite2D" parent="." unique_id=1461285564]
 position = Vector2(572, 310.00003)
 scale = Vector2(4, 3.764)
 texture = ExtResource("1_y1ial")
+
+[node name="Label" type="Label" parent="." unique_id=1985284993]
+offset_left = 75.0
+offset_top = 121.0
+offset_right = 1420.0
+offset_bottom = 505.0
+theme_override_colors/font_color = Color(0.8650295, 0.30681857, 0.05876153, 1)
+theme_override_colors/font_outline_color = Color(0.6056738, 1.6605109e-06, 3.85046e-07, 1)
+theme_override_fonts/font = ExtResource("2_7ku0t")
+theme_override_font_sizes/font_size = 100
+text = "ECHOES,
+EcHoEs,
+echoes..."
+
+[node name="Button" type="Button" parent="." unique_id=1882821718]
+offset_left = 818.0
+offset_top = 296.0
+offset_right = 937.0
+offset_bottom = 351.0
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_d7wv1")
+text = "START"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
