@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://cjkkxxm7yuf3b"]
 
-[ext_resource type="Texture2D" uid="uid://c6752na34b0na" path="res://win.png" id="1_8rnd2"]
+[ext_resource type="Texture2D" uid="uid://c6752na34b0na" path="res://win.png" id="1_oju23"]
 
 [node name="Level2" type="Node2D" unique_id=1134229188]
 
 [node name="Win" type="Sprite2D" parent="." unique_id=617415149]
-position = Vector2(159, 129)
-texture = ExtResource("1_8rnd2")
+position = Vector2(579.5, 327)
+scale = Vector2(3.621875, 3.6111112)
+texture = ExtResource("1_oju23")
